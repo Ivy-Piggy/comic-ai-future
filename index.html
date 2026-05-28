@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI冲击下 · 漫画的重新优势</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Inter:wght@400;600;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ✦ NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">✦ AI×漫画</a>
+    <div class="nav-links">
+      <a href="#intro">序言</a>
+      <a href="#compare">对比</a>
+      <a href="#comic-edge">漫画优势</a>
+      <a href="#ai-edge">AI优势</a>
+      <a href="#way-forward">出路</a>
+      <a href="#cases">案例</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ✦ HERO -->
+<section id="hero">
+  <canvas id="heroCanvas"></canvas>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge" data-reveal>2026 · 漫画未来主义</div>
+    <h1 class="hero-title" data-reveal>
+      <span class="title-line">AI冲击下</span>
+      <span class="title-line accent">漫画的重新优势</span>
+    </h1>
+    <p class="hero-sub" data-reveal>当算法学会分镜，当代码开始编剧——漫画专业的核心竞争力在哪里？</p>
+    <div class="hero-cta" data-reveal>
+      <a href="#intro" class="cta-primary">开始探索 →</a>
+      <a href="#compare" class="cta-secondary">直接看对比</a>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span>SCROLL</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ✦ INTRO -->
+<section id="intro">
+  <div class="section-inner">
+    <div class="section-header" data-reveal>
+      <span class="section-tag">序言</span>
+      <h2>漫画正在经历一场<br>前所未有的<span class="text-accent">技术地震</span></h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="intro-body" data-reveal>
+      <p>2024年以来，以Midjourney、DALL·E、Stable Diffusion为代表的AI图像生成工具已能产出媲美职业漫画家的单幅插图；ChatGPT/Claude等大语言模型可以在10秒内生成一篇完整的分集剧本；Runway、Pika、Sora等视频生成模型则直接跨越了"图→动"的最后壁垒。</p>
+      <p>面对这场技术浪潮，漫画专业的学生群体处于一个特殊的位置——<strong>既是被冲击最直接的群体，又是最有可能借力突围的群体</strong>。问题不在于AI是否会取代漫画家，而在于：</p>
+      <blockquote>当AI重构了整个内容生产流程，<span class="text-gold">漫画专业的核心优势究竟在哪里？</span></blockquote>
+      <p>本项目试图系统性地回答这个问题，从漫画专业学生的既有优势出发，结合AI的真正能力，描绘一条可行的未来路径。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ✦ COMPARISON -->
+<section id="compare">
+  <div class="section-inner">
+    <div class="section-header" data-reveal>
+      <span class="section-tag">维度对比</span>
+      <h2>漫画专业 vs AI：<span class="text-accent">能力矩阵</span></h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="compare-grid" data-reveal>
+      <!-- Card: 漫画技能 -->
+      <div class="compare-card human-card">
+        <div class="card-icon">🎨</div>
+        <h3>漫画技能</h3>
+        <p>分镜叙事、角色设计、线稿表现、黑白构成、表情节奏、对话框设计</p>
+        <div class="card-tags">
+          <span class="tag tag-human">不可替代</span>
+          <span class="tag tag-mid">部分可AI辅助</span>
+        </div>
+      </div>
+
+      <!-- Card: AI 自动剧本 -->
+      <div class="compare-card ai-card">
+        <div class="card-icon">🤖</div>
+        <h3>自动生成剧本</h3>
+        <p>LLM创作剧情大纲、角色对话、分集结构、世界观设定（Prompt Engineering）</p>
+        <div class="card-tags">
+          <span class="tag tag-ai">AI优势</span>
+          <span class="tag tag-mid">需人类把关</span>
+        </div>
+      </div>
+
+      <!-- Card: 圈层 -->
+      <div class="compare-card human-card">
+        <div class="card-icon">🌐</div>
+        <h3>漫画圈层</h3>
+        <p>同人社群、编辑人脉、读者互动、漫展资源、行业经验传承</p>
+        <div class="card-tags">
+          <span class="tag tag-human">不可替代</span>
+          <span class="tag tag-weak">AI无法复制</span>
+        </div>
+      </div>
+
+      <!-- Card: AI 图生视频 -->
+      <div class="compare-card ai-card">
+        <div class="card-icon">🎬</div>
+        <h3>图片→动态视频</h3>
+        <p>静止画面到连贯动画、场景转场、角色运镜、动态漫画（AI Animation）</p>
+        <div class="card-tags">
+          <span class="tag tag-ai">AI优势</span>
+          <span class="tag tag-mid">质量待提升</span>
+        </div>
+      </div>
+
+      <!-- Card: 艺术审美 -->
+      <div class="compare-card human-card">
+        <div class="card-icon">💎</div>
+        <h3>艺术审美</h3>
+        <p>风格辨别力、文化语境理解、情感表达分寸、原创性判断、视觉修养</p>
+        <div class="card-tags">
+          <span class="tag tag-human">不可替代</span>
+          <span class="tag tag-weak">AI缺乏修养</span>
+        </div>
+      </div>
+
+      <!-- Card: AI 工作流+编程 -->
+      <div class="compare-card ai-card">
+        <div class="card-icon">⚙️</div>
+        <h3>工作流+编程</h3>
+        <p>ComfyUI节点编排、自动化批量处理、API调用集成、定制化工具开发</p>
+        <div class="card-tags">
+          <span class="tag tag-ai">AI优势</span>
+          <span class="tag tag-mid">需学习曲线</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Summary bar -->
+    <div class="compare-summary" data-reveal>
+      <div class="summary-bar">
+        <div class="bar-human" style="width:55%">
+          <span>人类优势 55%</span>
+        </div>
+        <div class="bar-ai" style="width:45%">
+          <span>AI优势 45%</span>
+        </div>
+      </div>
+      <p class="summary-note">关键洞察：人类在 <strong>审美判断·圈层连接·专业技能</strong> 上仍有结构性优势；AI在 <strong>效率·多模态·编程整合</strong> 上碾压。未来属于能连接两者的人。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ✦ COMIC EDGE -->
+<section id="comic-edge">
+  <div class="section-inner">
+    <div class="section-header" data-reveal>
+      <span class="section-tag">漫画优势</span>
+      <h2>漫画专业学生的<br><span class="text-accent">三大不可替代优势</span></h2>
+      <div class="divider"></div>
+    </div>
+
+    <!-- Pillar 1 -->
+    <div class="edge-pillar" data-reveal>
+      <div class="pillar-number">01</div>
+      <div class="pillar-content">
+        <h3>🎨 漫画技能——<span class="text-gold">AI无法学习的"手艺感"</span></h3>
+        <p>漫画技能不仅仅是"画得好"。它包含一整套视觉叙事语言：</p>
+        <ul class="pillar-list">
+          <li><strong>分镜节奏</strong>——如何在格子之间控制阅读时间、情绪起伏、悬念释放。AI生成的"分镜"目前只能做到画面连贯，远远无法理解叙事节奏。</li>
+          <li><strong>对话框设计</strong>——形状、位置、大小、箭头方向都在传递情绪和信息量。这是一个极其精细的视觉语言系统。</li>
+          <li><strong>黑白构成</strong>——漫画家用黑白灰三色创造空间深度、光影情绪和视觉重心。AI在灰度控制上经常出现"脏"、"糊"的问题。</li>
+          <li><strong>表情与肢体语言</strong>——漫画角色的夸张表情和戏剧化肢体动作是高度风格化的编码系统。AI画出的表情往往"正确但无味"。</li>
+        </ul>
+        <div class="edge-insight">
+          <span class="insight-label">关键判断</span>
+          <p>这些技能的价值不在于"AI能不能做到"，而在于<strong>AI做出来的东西有没有"人味儿"</strong>。漫画读者追的是"人的表达"，不是"接近人的表达"。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pillar 2 -->
+    <div class="edge-pillar" data-reveal>
+      <div class="pillar-number">02</div>
+      <div class="pillar-content">
+        <h3>🌐 漫画圈层——<span class="text-gold">AI无法替代的"社区生态"</span></h3>
+        <p>漫画从来不是一个孤立创作的行为。专业学生在校期间积累的圈层资源，构成了AI无法复制的竞争壁垒：</p>
+        <ul class="pillar-list">
+          <li><strong>同人圈与读者社群</strong>——Bilibili漫画、微博、Pixiv、Lofter上的读者关系、粉丝互动、社群运营能力，是AI无法复制的社会化资产。</li>
+          <li><strong>编辑与出版人脉</strong>——实习经历、编辑推荐、出版社关系、漫展上的面对面交流。这些真实的人际信任链，是算法无法穿透的。</li>
+          <li><strong>行业经验传承</strong>——导师指导、行业前辈的言传身教、同行的批评与鼓励。这种迭代式的成长过程塑造了创作者的判断力。</li>
+          <li><strong>漫展与活动经验</strong>——从布展到签售到现场创作的实战经验，让创作者学会如何与真实读者建立连接。</li>
+        </ul>
+        <div class="edge-insight">
+          <span class="insight-label">关键判断</span>
+          <p>AI可以生成内容，但<strong>无法"参加"一场漫展，无法与一个读者眼神交流，无法理解"圈子"里的暗语和默契</strong>。行业永远是人的行业。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pillar 3 -->
+    <div class="edge-pillar" data-reveal>
+      <div class="pillar-number">03</div>
+      <div class="pillar-content">
+        <h3>💎 艺术审美——<span class="text-gold">AI最缺乏的"判断力"</span></h3>
+        <p>审美不是"好看"，而是一整套文化判断系统：</p>
+        <ul class="pillar-list">
+          <li><strong>风格辨别力</strong>——能够区分手冢治虫的"剧画"与大友克洋的"写实主义"之间的本质差异，理解不同风格背后的文化语境和历史传承。</li>
+          <li><strong>文化语境感知</strong>——理解为什么某些元素在中国漫画语境中具有特殊含义，为什么某些视觉符号能引发特定文化共鸣。</li>
+          <li><strong>情感表达分寸</strong>——知道什么时候该夸张，什么时候该克制。AI往往"情绪过载"或"情绪缺失"，难以把握微妙的情感层次。</li>
+          <li><strong>原创性判断</strong>——能够区分"借鉴"和"抄袭"，理解"风格演变"和"套用模板"的边界。这是法律和伦理的双重判断力。</li>
+        </ul>
+        <div class="edge-insight">
+          <span class="insight-label">关键判断</span>
+          <p>AI可以学习"美"的统计分布，但<strong>无法理解"为什么这个好"</strong>。审美判断力是漫画专业四年训练中无法被替代的核心产出。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ✦ AI EDGE -->
+<section id="ai-edge">
+  <div class="section-inner">
+    <div class="section-header" data-reveal>
+      <span class="section-tag">AI优势</span>
+      <h2>AI正在重构的<br><span class="text-accent">三大能力领域</span></h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="ai-grid">
+      <div class="ai-pillar" data-reveal>
+        <div class="ai-pillar-header">
+          <span class="ai-icon">📝</span>
+          <h3>自动生成剧本</h3>
+        </div>
+        <div class="ai-pillar-body">
+          <p>AI在文本创作上的能力正在颠覆传统编剧模式：</p>
+          <ul>
+            <li><strong>效率碾压</strong>——30秒生成10集分集大纲，1分钟写出3种不同风格的对话版本</li>
+            <li><strong>多方案并行</strong>——同时生成"友情热血"和"悬疑暗黑"两个方向的剧本，供人类选择</li>
+            <li><strong>语言风格适应</strong>——根据目标受众（少儿/青少年/成人）自动调整用词和叙事复杂度</li>
+            <li><strong>跨文化改编</strong>——一键将日式热血叙事转为中式玄幻节奏</li>
+          </ul>
+          <div class="ai-limitation">
+            <span class="lim-label">局限</span>
+            <p>缺乏真正的原创性和情感深度，需要人类编剧进行二次加工和"情感注入"</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ai-pillar" data-reveal>
+        <div class="ai-pillar-header">
+          <span class="ai-icon">🎞️</span>
+          <h3>图片生成视频</h3>
+        </div>
+        <div class="ai-pillar-body">
+          <p>从漫画到动画的壁垒正在被AI打破：</p>
+          <ul>
+            <li><strong>动态漫画（Motion Comic）自动生成</strong>——将漫画分镜转化为有镜头运动的视频</li>
+            <li><strong>角色动画化</strong>——AI从单张插图中提取角色，生成行走、说话、表情变化的动画</li>
+            <li><strong>场景转场</strong>——自动生成场景之间的过渡动画，极大地降低制作成本</li>
+            <li><strong>特效合成</strong>——爆炸、魔法、速度线等漫画效果自动生成并融入视频</li>
+          </ul>
+          <div class="ai-limitation">
+            <span class="lim-label">局限</span>
+            <p>长视频的一致性仍是难题，角色和场景的"翻车"概率高，不适合精细作品</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="ai-pillar" data-reveal>
+        <div class="ai-pillar-header">
+          <span class="ai-icon">🔧</span>
+          <h3>工作流+编程</h3>
+        </div>
+        <div class="ai-pillar-body">
+          <p>AI工具链的整合能力正在重塑创作流程：</p>
+          <ul>
+            <li><strong>ComfyUI节点工作流</strong>——通过可视化节点编排复杂的AI图像生成pipeline</li>
+            <li><strong>批量自动化</strong>——用Python脚本批量处理背景生成、构图调整、色彩统一</li>
+            <li><strong>API集成</strong>——将ChatGPT + Midjourney + Runway串联成一条自动化生产线</li>
+            <li><strong>定制化工具开发</strong>——用Cursor/Claude写代码，为特定风格训练LoRA模型</li>
+          </ul>
+          <div class="ai-limitation">
+            <span class="lim-label">局限</span>
+            <p>需要一定的编程基础和技术理解，门槛仍在。对纯艺术背景的学生有学习成本</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ✦ WAY FORWARD -->
+<section id="way-forward">
+  <div class="section-inner">
+    <div class="section-header" data-reveal>
+      <span class="section-tag">出路</span>
+      <h2>漫画专业学生的<br><span class="text-accent">未来进化路径</span></h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="roadmap" data-reveal>
+      <!-- Path 1 -->
+      <div class="road-item">
+        <div class="road-marker">路线A</div>
+        <div class="road-content">
+          <h3>🛠️ 漫画家 → AI增强型创作者</h3>
+          <p>不放弃手绘核心技能，但将AI工具嵌入生产流程：</p>
+          <ul>
+            <li>用AI生成背景、材质的多个方案 → 人工筛选+修改</li>
+            <li>用LLM作为"编剧助手"讨论剧情走向 → 人工决定核心情节</li>
+            <li>用AI进行色彩提案和配色实验 → 人工确认最终方案</li>
+            <li>用ComfyUI批量生成中间帧 → 人工精修关键帧</li>
+          </ul>
+          <div class="road-outcome">
+            <span class="outcome-label">产出</span>
+            <span>效率提升3-5倍，质量由人类把控。漫画家从"画匠"升级为"艺术导演"</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Path 2 -->
+      <div class="road-item">
+        <div class="road-marker">路线B</div>
+        <div class="road-content">
+          <h3>🎬 漫画人 → AI动画/动态漫画导演</h3>
+          <p>利用漫画叙事的核心能力，转型为AI动画项目的导演：</p>
+          <ul>
+            <li>漫画分镜能力直接转化为AI动画的"镜头语言指导"</li>
+            <li>漫画审美用于把控AI生成动画的视觉风格一致性</li>
+            <li>角色设计能力用于训练和微调角色LoRA模型</li>
+            <li>故事架构能力用于AI动画系列的内容规划</li>
+          </ul>
+          <div class="road-outcome">
+            <span class="outcome-label">产出</span>
+            <span>以漫画的叙事能力为内核，以AI动画技术为外壳，创造"低成本高质感"的动画内容</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Path 3 -->
+      <div class="road-item">
+        <div class="road-marker">路线C</div>
+        <div class="road-content">
+          <h3>🔌 漫画人 → AI工作流设计者</h3>
+          <p>成为连接"艺术创作"和"AI技术"的桥梁型人才：</p>
+          <ul>
+            <li>学习ComfyUI/Stable Diffusion的基础工作流搭建</li>
+            <li>掌握Prompt Engineering（提示词工程）作为"数字画笔"</li>
+            <li>为特定风格制作LoRA模型（用已有的漫画风格数据训练）</li>
+            <li>设计并分享面向漫画行业的AI工作流模板</li>
+          </ul>
+          <div class="road-outcome">
+            <span class="outcome-label">产出</span>
+            <span>成为AI漫画工具链的"产品经理"或"技术美术（TA）"。这类人才目前极度稀缺</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Path 4 -->
+      <div class="road-item">
+        <div class="road-marker">路线D</div>
+        <div class="road-content">
+          <h3>🧭 漫画人 → 文化策展人/评论人</h3>
+          <p>利用审美判断力和行业认知，转向更高维度的文化工作：</p>
+          <ul>
+            <li>漫画批评与评论——在AI内容泛滥的时代，高质量的评论更加稀缺</li>
+            <li>AI内容策展——在海量的AI生成漫画中做"人肉筛选"和推荐</li>
+            <li>漫画教育——将传统漫画技能培训升级为"人+AI协作"课程设计</li>
+            <li>版权与伦理顾问——为AI漫画内容提供专业伦理和版权判断</li>
+          </ul>
+          <div class="road-outcome">
+            <span class="outcome-label">产出</span>
+            <span>在AI时代，'判断力'比'生产力'更值钱。懂得什么好、为什么好的人，将成为稀缺资源</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Path 5 -->
+      <div class="road-item">
+        <div class="road-marker">路线E</div>
+        <div class="road-content">
+          <h3>🏗️ 漫画人 → 独立IP创造者</h3>
+          <p>利用AI工具大幅降低创作门槛，自己成为IP的CEO：</p>
+          <ul>
+            <li>用AI辅助完成前期视觉开发（角色设计+场景概念+画风确定）</li>
+            <li>用LLM辅助世界观构建和设定文档撰写</li>
+            <li>用AI动画工具制作IP宣传短片</li>
+            <li>在小红书/B站/微博用AI辅助的漫画内容快速建立粉丝群</li>
+          </ul>
+          <div class="road-outcome">
+            <span class="outcome-label">产出</span>
+            <span>一个人就是一个工作室。AI让独立创作者的产能达到小型团队的水平</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final thesis box -->
+    <div class="thesis-box" data-reveal>
+      <div class="thesis-icon">✦</div>
+      <h3>核心结论</h3>
+      <p>漫画专业学生的核心竞争力从来不是"画得快"或"画得像"——而是<span class="text-accent">叙事眼光、审美判断、文化理解、社群连接</span>。AI能替代的是"执行"，无法替代的是"判断"。未来属于那些<span class="text-gold">能用AI提升效率、同时用人类独有眼光把控方向</span>的创作者。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ✦ CASES & DIALOGUE -->
+<section id="cases">
+  <div class="section-inner">
+    <div class="section-header" data-reveal>
+      <span class="section-tag">案例与思考</span>
+      <h2>前沿实践与<br><span class="text-accent">深度对话</span></h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="cases-grid">
+      <div class="case-card" data-reveal>
+        <div class="case-number">01</div>
+        <h3>日本漫画界的AI实验</h3>
+        <p>集英社已在部分作品中尝试AI辅助背景绘制，但明确表示"角色设计和分镜必须由人类完成"。手冢Production用AI复原手冢治虫未完成的遗作，但强调AI只是"工具"而非"作者"。</p>
+        <div class="case-takeaway">启示：即使是最激进的内容公司，也把核心叙事权牢牢掌握在人类手中。</div>
+      </div>
+
+      <div class="case-card" data-reveal>
+        <div class="case-number">02</div>
+        <h3>中国网文的"AI编剧"浪潮</h3>
+        <p>阅文集团推出AI编剧工具后，大部分作者将其用于"灵感激发"和"反套路检查"，而非完全替代写作。最有创意的作者恰恰是使用AI最频繁的作者——他们把AI当作"对抗创作瓶颈的橡皮鸭"。</p>
+        <div class="case-takeaway">启示：AI不是替代者，而是"创意加速器"。善于使用AI的创作者，产量和质量都在提升。</div>
+      </div>
+
+      <div class="case-card" data-reveal>
+        <div class="case-number">03</div>
+        <h3>动态漫画的AI转型</h3>
+        <p>韩国Webtoon平台已大规模使用AI辅助的动态漫画制作，将制作周期从3个月缩短到2周。但平台数据显示，<strong>用户粘性最高</strong>的作品依然来自完全手绘的高质量漫画——AI辅助的"快消品"可以撑起流量，但无法留住核心读者。</p>
+        <div class="case-takeaway">启示：AI可以做大流量，但做不了"铁粉"。核心读者的忠诚度来自于"人的温度"。</div>
+      </div>
+
+      <div class="case-card" data-reveal>
+        <div class="case-number">04</div>
+        <h3>数字艺术平台的AI冲击</h3>
+        <p>Pixiv（日本最大插画社区）在2023年经历了AI作品涌入的冲击波后，推出了"AI生成标记"功能。数据显示<strong>标注为"AI生成"的作品，平均收藏量下降了约60%</strong>。读者需要知道"这是人画的"。</p>
+        <div class="case-takeaway">启示：在信息对称的条件下，读者选择"人画"而非"AI画"。品牌溢价来自于"人的认证"。</div>
+      </div>
+    </div>
+
+    <div class="dialogue-box" data-reveal>
+      <h3>💬 给漫画专业学生的五句话</h3>
+      <div class="dialogue-list">
+        <div class="dialogue-item"><span class="dialogue-num">一</span>你的手绘能力不会贬值——它正从"生产力"变成"稀缺性"。</div>
+        <div class="dialogue-item"><span class="dialogue-num">二</span>学会用AI不是投降——而是把省下的时间花在最值得花的判断上。</div>
+        <div class="dialogue-item"><span class="dialogue-num">三</span>你的圈层和社群是真正的护城河——AI永远无法参加一场漫展的签售。</div>
+        <div class="dialogue-item"><span class="dialogue-num">四</span>"AI+你"的组合比任何单一方向都有竞争力——成为两栖人才。</div>
+        <div class="dialogue-item"><span class="dialogue-num">五</span>未来不是"AI替代人"，而是"懂AI的人替代不懂AI的人"——学起来，现在就开始。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ✦ ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-info" data-reveal>
+        <h2>关于本项目</h2>
+        <p>这是一个开放的知识共享项目，旨在探讨AI技术浪潮下漫画教育与漫画产业的未来方向。</p>
+        <p>内容基于2025-2026年的行业观察与学术研究，观点仅供参考与讨论。</p>
+        <div class="about-meta">
+          <span>📅 2026</span>
+          <span>🔖 开放讨论</span>
+          <span>✏️ 欢迎补充</span>
+        </div>
+      </div>
+      <div class="about-links" data-reveal>
+        <h3>相关讨论</h3>
+        <p>AI与漫画的未来是一个持续演进的议题。欢迎在以下平台参与讨论：</p>
+        <div class="tag-cloud">
+          <span class="tag-cloud-item">#AI漫画</span>
+          <span class="tag-cloud-item">#漫画教育转型</span>
+          <span class="tag-cloud-item">#人机协作创作</span>
+          <span class="tag-cloud-item">#动态漫画</span>
+          <span class="tag-cloud-item">#AI工作流</span>
+          <span class="tag-cloud-item">#ComfyUI漫画</span>
+          <span class="tag-cloud-item">#LoRA</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</section>
+
+<!-- ✦ Back to Top -->
+<button id="back-to-top" aria-label="回到顶部">
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+    <path d="M10 17V3M10 3L4 9M10 3L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </svg>
+</button>
+
+<!-- ✦ Progress Bar -->
+<div id="progress-bar"><div id="progress-fill"></div></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

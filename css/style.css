@@ -854,6 +854,307 @@ blockquote {
   color: var(--magenta);
 }
 
+/* ✦ SURVEY */
+#survey {
+  background: var(--bg-primary);
+  position: relative;
+}
+#survey::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--cyan), transparent, var(--magenta), transparent);
+}
+.survey-disclaimer {
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-dim);
+  margin-top: 16px;
+}
+.survey-block {
+  margin-bottom: 60px;
+}
+.survey-block-title {
+  font-size: 22px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.surv-icon { font-size: 24px; }
+.survey-block-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+/* ── Table ── */
+.surv-table-wrap {
+  overflow-x: auto;
+  border-radius: 10px;
+  border: 1px solid var(--border-light);
+}
+.surv-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  min-width: 600px;
+}
+.surv-table thead th {
+  background: var(--bg-card-hover);
+  color: var(--cyan);
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-light);
+}
+.surv-table tbody td {
+  padding: 10px 14px;
+  color: var(--text-secondary);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  line-height: 1.5;
+}
+.surv-table tbody tr:hover td {
+  background: rgba(255, 45, 85, 0.04);
+}
+.surv-table tbody tr:last-child td { border-bottom: none; }
+.surv-footnote {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-top: 12px;
+  padding: 10px 14px;
+  background: rgba(255, 215, 0, 0.04);
+  border-radius: 6px;
+  font-size: 12px;
+  color: var(--text-dim);
+  line-height: 1.5;
+}
+.surv-footnote span:first-child { color: var(--gold); font-size: 14px; }
+
+/* ── AI Company Cards ── */
+.ai-comp-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+.ai-comp-card {
+  background: var(--bg-card);
+  border: 1px solid rgba(0, 212, 255, 0.12);
+  border-radius: 10px;
+  padding: 16px;
+  transition: all 0.2s;
+  position: relative;
+}
+.ai-comp-card:hover {
+  border-color: rgba(0, 212, 255, 0.35);
+  transform: translateY(-2px);
+}
+.comp-flag {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  color: var(--cyan-dim);
+  margin-bottom: 4px;
+  letter-spacing: 1px;
+}
+.ai-comp-card h4 {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: var(--text-primary);
+}
+.ai-comp-card p {
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+.comp-tag {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: rgba(0, 212, 255, 0.1);
+  color: var(--cyan);
+}
+.surv-note {
+  margin-top: 14px;
+  padding: 10px 14px;
+  background: rgba(255, 45, 85, 0.04);
+  border-left: 2px solid var(--magenta);
+  border-radius: 0 6px 6px 0;
+  font-size: 12px;
+  color: var(--text-dim);
+  line-height: 1.6;
+}
+
+/* ── Traditional Companies Grid ── */
+.trad-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+}
+.trad-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
+  padding: 16px;
+  transition: all 0.2s;
+}
+.trad-card:hover { border-color: rgba(255, 215, 0, 0.3); }
+.trad-highlight {
+  border-color: rgba(255, 45, 85, 0.2);
+  background: linear-gradient(135deg, rgba(255,45,85,0.04), transparent);
+}
+.trad-rank { font-size: 12px; margin-bottom: 4px; letter-spacing: 1px; }
+.trad-card h4 {
+  font-size: 14px;
+  margin-bottom: 2px;
+  color: var(--text-primary);
+}
+.trad-loc {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  color: var(--text-dim);
+  margin-bottom: 8px;
+}
+.trad-card p {
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+.trad-mark {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: rgba(255, 45, 85, 0.08);
+  color: var(--magenta);
+}
+
+/* ── Rising Stars ── */
+.rising-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 14px;
+}
+.rising-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.rising-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 215, 0, 0.3);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+.rising-header {
+  padding: 14px 16px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.rising-year {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--gold);
+  background: rgba(255, 215, 0, 0.08);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+.rising-header h4 {
+  font-size: 14px;
+  margin-bottom: 0;
+  flex: 1;
+}
+.rising-loc {
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  color: var(--text-dim);
+}
+.rising-body { padding: 10px 16px 14px; }
+.rising-motto {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  color: var(--gold);
+  font-style: italic;
+  margin-bottom: 6px;
+}
+.rising-works {
+  font-size: 12px;
+  color: var(--cyan);
+  margin-bottom: 8px;
+}
+.rising-timeline {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 8px;
+  padding: 8px 10px;
+  background: rgba(255,255,255,0.02);
+  border-radius: 6px;
+}
+.rising-lesson {
+  font-size: 11px;
+  color: var(--text-dim);
+  line-height: 1.5;
+  padding-top: 6px;
+  border-top: 1px solid rgba(255,255,255,0.04);
+}
+
+/* ── Survey Insight ── */
+.survey-insight {
+  background: linear-gradient(135deg, rgba(255,45,85,0.06), rgba(0,212,255,0.04));
+  border: 1px solid rgba(255,45,85,0.15);
+  border-radius: 12px;
+  padding: 28px;
+}
+.si-header {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: var(--text-primary);
+}
+.si-grid { display: flex; flex-direction: column; gap: 12px; }
+.si-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px 16px;
+  background: rgba(255,255,255,0.02);
+  border-radius: 8px;
+  align-items: flex-start;
+}
+.si-num {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--magenta);
+  white-space: nowrap;
+  min-width: 24px;
+}
+.si-item p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
 /* ✦ BACK TO TOP */
 #back-to-top {
   position: fixed;
@@ -906,6 +1207,9 @@ blockquote {
   .ai-grid { grid-template-columns: 1fr; }
   .cases-grid { grid-template-columns: 1fr; }
   .about-grid { grid-template-columns: 1fr; gap: 32px; }
+  .ai-comp-grid { grid-template-columns: 1fr 1fr; }
+  .trad-grid { grid-template-columns: 1fr 1fr; }
+  .rising-grid { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 768px) {
@@ -943,4 +1247,7 @@ blockquote {
   .compare-card { padding: 20px 16px; }
   .edge-pillar { padding: 20px 16px; }
   .pillar-list li { font-size: 14px; }
+  .ai-comp-grid { grid-template-columns: 1fr; }
+  .trad-grid { grid-template-columns: 1fr; }
+  .rising-grid { grid-template-columns: 1fr; }
 }
